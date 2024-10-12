@@ -13,6 +13,10 @@
                 <img src="images/odin-lined.png">
                 <p>Odin</p>
             </div>
+            <div class="logofooter">
+                <p>Photo by <a href="https://unsplash.com/@watchelijah">Elijah Grimm</a> 
+                    on <a href="https://unsplash.com/photos/the-sun-is-setting-over-a-mountain-range-r6jX0sNbCBs">Unsplash</a></p>
+            </div>
         </div>
         <div class="signupform">
             <div class="textwrapper">
@@ -26,15 +30,16 @@
            </p>
             </div>
             <div class="formwrapper">
+                <form>
                 <strong><p>Let's do this!</p></strong>
                 <div class="formgroup">
                         <div>
                             <label for="fname">FIRST NAME</label>
-                            <input type="text" id="fname" name="fname">
+                            <input type="text" id="fname" name="fname" required>
                         </div>
                         <div>
                             <label for="lname">LAST NAME</label>
-                            <input type="text" id="lname" name="lname">
+                            <input type="text" id="lname" name="lname" required>
                         </div>
                 </div>
 
@@ -45,27 +50,29 @@
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="number" id="phone" name="phone">
+                        <input type="tel" pattern="\d{7,}" id="phone" name="phone" placeholder="Enter your phone number" required>
                     </div>
                 </div>
 
                 <div class="formgroup">
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div>
                         <label for="passwordconfirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="passwordconfirm" name="passwordconfirm">
+                        <input type="password" id="passwordconfirm" name="passwordconfirm" required>
                     </div>
                 </div>
+                
             </div>
             <div class="submitwrapper">
                 <input type="submit" value="Create account">
                 <div>
-                    <p>Already have an account? Log in</p>
+                    <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </div>
+        </form>
         </div>
     </div>
 </body>
